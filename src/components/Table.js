@@ -12,7 +12,7 @@ class Table extends Component {
   }
 
   delete() {
-    axios.delete('http://localhost:8080/todo/api/todo/' + this.props.obj.code)
+    axios.delete('http://localhost/api/todo/' + this.props.obj.code)
       .then(response => {
         this.props.handlerUpdate();
       })

@@ -17,7 +17,7 @@ export default class Index extends Component {
   }
 
   getTodoList() {
-    axios.get('http://localhost:8080/todo/api/todo')
+    axios.get('http://localhost/api/todo')
     .then(response => {
       console.log(response.data);
       this.setState({ todos: response.data.response });

@@ -34,7 +34,7 @@ export default class Create extends Component {
             text: this.state.text,
             priority: this.state.priority
         };
-        axios.post('http://localhost:8080/todo/api/todo', obj)
+        axios.post('http://localhost/api/todo', obj)
             .then(res => console.log(res.data));
 
         this.setState({

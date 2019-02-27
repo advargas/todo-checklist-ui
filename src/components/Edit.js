@@ -17,7 +17,7 @@ export default class Edit extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/todo/api/todo/' + this.props.match.params.code)
+    axios.get('http://localhost/api/todo/' + this.props.match.params.code)
       .then(response => {
         this.setState({
           text: response.data.response.text,
